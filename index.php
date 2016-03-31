@@ -20,7 +20,7 @@
           }
         */
 
-        $reponse = [
+        $response = [
           "reponse_type" => "in_channel",
           "text" => $app->request->post('text')
         ];
