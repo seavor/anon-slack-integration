@@ -19,9 +19,7 @@
             response_url: https://hooks.slack.com/commands/1234/5678
           }
         */
-        $body = $app->request->getBody();
-
-        echo $body->('text');
+        echo $app->request->post('text');
     });
 
     $app->run();
