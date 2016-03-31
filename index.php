@@ -21,7 +21,7 @@
         */
         $body = $app->request->getBody();
 
-        echo json_stringify($body);
+        echo json_encode($body);
     });
 
     $app->run();
