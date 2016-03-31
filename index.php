@@ -19,7 +19,13 @@
             response_url: https://hooks.slack.com/commands/1234/5678
           }
         */
-        echo $app->request->post('text');
+
+        $reponse = (
+          "reponse_type" => "in_channel",
+          "text" => $app->request->post('text')
+        );
+
+        echo json_encode($response);
     });
 
     $app->run();
