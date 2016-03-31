@@ -20,10 +20,10 @@
           }
         */
 
-        $reponse = (
+        $reponse = [
           "reponse_type" => "in_channel",
           "text" => $app->request->post('text')
-        );
+        ];
 
         echo json_encode($response);
     });
